@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack",
     "serve": "webpack serve",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,7 @@
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.2",
     "dotenv-webpack": "^8.1.1",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.0",
     "style-loader": "^3.3.1",
