@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="shortcut icon" href="./img/imagotipo.png" type="image/x-icon">
+    <title>WonderFood</title>
+<script defer src="./js/index.js"></script></head>
+<body>
+    <nav>
+        <div id="navLogo"><img src="./img/imagotipo.png" alt="" height="100"><span>Wonder<span class="mastercolor">Food</span></span></div>
+        <div id="navForm">
+            <form>
+                <div class="item_form">
+                    <label for="sexo">sexo</label>
+                    <select name="sexo" id="sexo">
+                        <option value="Mujer" selected>Mujer</option>
+                        <option value="Hombre">Hombre</option>
+                    </select>
+                </div>
+                <div class="item_form">
+                    <label for="altura">altura</label>
+                    <div class="item_form_med">
+                        <input type="text" id="altura" class="inputConMed" value="165">
+                        <input type="text" id="alturaMed" class="inputMed" value="cm" disabled> 
+                    </div>
+                </div>
+                <div class="item_form">
+                    <label for="actividad">actividad</label>
+                    <select name="actividad" id="actividad">
+                        <option value="alta" selected>Alta</option>
+                        <option value="moderada">Moderada</option>
+                        <option value="baja">Baja</option>
+                    </select>
+                </div>
+                <div class="item_form">
+                    <label for="calOpt">Kcal optimas</label>
+                    <input type="text" id="KcalOpt" disabled>
+                </div>
+                <div class="item_form">
+                    <label for="peso">peso</label>
+                    <div class="item_form_med">
+                        <input type="text" id="peso" class="inputConMed" value="60">
+                        <input type="text" id="pesoMed" class="inputMed" value="Kg" disabled> 
+                    </div>
+                </div>
+                <div class="item_form">
+                    <label for="edad">edad</label>
+                    <input type="text" id="edad" value="25">
+                </div>
+                <div class="item_form">
+                    <label for="button"></label>
+                    <button id="botonCalculo">calcular</button>
+                </div>
+            </form>
+        </div>
+        <div id="navCache">
+            <button id="botonReiniciarCache" title="Reiniciar caché y recargar datos">🔄 Reiniciar Caché</button>
+        </div>
+    </nav>
+    <main>
+        <article id="platos">
+            <section class="seccionplatos">
+                <h3>Entrantes</h3>
+                <ul id="entrantes">
+                </ul>
+            </section>
+            <section class="seccionplatos">
+                <h3>Primeros</h3>
+                <ul id="primeros">
+                </ul>
+            </section>
+            <section class="seccionplatos">
+                <h3>Segundos</h3>
+                <ul id="segundos">
+                </ul>
+            </section>
+            <section class="seccionplatos">
+                <h3>Postres</h3>
+                <ul id="postres">
+                </ul>
+            </section>
+        </article>
+        <article id="menus">
+            <section>
+                <h3>Menu</h3>
+                <ul id="menu">
+                    <li id="menuEntrante"><img src="./img/entrante01.png" alt="Entrante" width="100"><p>entrante sin elegir</p></li>
+                    <li id="menuPrimero"><img src="./img/primero01.png" alt="Primer" width="100"><p>primero sin elegir</p></li>
+                    <li id="menuSegundo"><img src="./img/segundo01.png" alt="Segundo" width="100"><p>segundo sin elegir</p></li>
+                    <li id="menuPostre"><img src="./img/postre01.png" alt="Postre" width="100"><p>postre sin elegir</p></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Lista de la compra</h3>
+                <ul id="listaCompra">
+                </ul>
+            </section>
+            <section>
+                <div id="totalCalorias">
+                    <strong>Total de calorías del menú:</strong> 
+                    <span class="caloria-valor">0 kcal</span>
+                </div>
+            </section>
+        </article>
+
+    </main>
+</body>
+</html>
